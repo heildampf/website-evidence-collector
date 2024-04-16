@@ -47,7 +47,7 @@ You can check your `PATH` with this command: `echo $PATH`.
 
 ### Examples with Command Line Options
 
-### Docker Run with Command Line Options
+#### Docker Run with Command Line Options
 
 ```sh
 docker run --rm -it --cap-add=SYS_ADMIN -v $(pwd)/output:/output website-evidence-collector --testssl --overwrite --max 300  https://www.domain.tld

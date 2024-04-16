@@ -50,6 +50,10 @@ You can check your `PATH` with this command: `echo $PATH`.
 #### Simple Output on the Terminal only
 
 ```sh
+docker run --rm -it --cap-add=SYS_ADMIN -v $(pwd)/output:/output website-evidence-collector --testssl --overwrite --max 300  https://www.domain.tld
+```
+
+```sh
 website-evidence-collector --no-output --yaml https://example.com 2> /dev/null
 ```
 
